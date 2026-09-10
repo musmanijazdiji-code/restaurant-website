@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bella Cucina - Italian Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>La Bella Cucina</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to La Bella Cucina</h1>
+            <p>Experience authentic Italian cuisine in a warm and welcoming atmosphere</p>
+            <button class="btn btn-primary">Book a Table</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>La Bella Cucina has been serving authentic Italian cuisine since 2010. Our chef, trained in Italy, brings traditional recipes and modern culinary techniques to create unforgettable dining experiences.</p>
+                    <p>We pride ourselves on using only the freshest ingredients, sourced locally whenever possible, to ensure every dish exceeds your expectations.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Fresh Ingredients</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chef-hat"></i>
+                        <h3>Expert Chefs</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wine-glass"></i>
+                        <h3>Premium Wines</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="appetizers">Appetizers</button>
+                <button class="category-btn" data-category="mains">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Appetizers -->
+                <div class="menu-item active" data-category="appetizers">
+                    <div class="item">
+                        <h3>Bruschetta al Pomodoro</h3>
+                        <p>Toasted bread with tomatoes, garlic, and basil</p>
+                        <span class="price">$8.99</span>
+                    </div>
+                    <div class="item">
+                        <h3>Calamari Fritti</h3>
+                        <p>Crispy fried squid with marinara sauce</p>
+                        <span class="price">$10.99</span>
+                    </div>
+                    <div class="item">
+                        <h3>Caprese Salad</h3>
+                        <p>Fresh mozzarella, tomatoes, basil, and olive oil</p>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-item" data-category="mains">
+                    <div class="item">
+                        <h3>Pasta Carbonara</h3>
+                        <p>Classic Roman pasta with pancetta, eggs, and parmesan</p>
+                        <span class="price">$14.99</span>
+                    </div>
+                    <div class="item">
+                        <h3>Osso Buco</h3>
+                        <p>Braised veal shanks with vegetables and white wine</p>
+                        <span class="price">$28.99</span>
+                    </div>
+                    <div class="item">
+                        <h3>Risotto ai Funghi</h3>
+                        <p>Creamy risotto with wild mushrooms and truffle oil</p>
+                        <span class="price">$16.99</span>
+                    </div>
+                    <div class="item">
+                        <h3>Branzino al Forno</h3>
+                        <p>Baked sea bass with lemon and herbs</p>
+                        <span class="price">$24.99</span>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="item">
+                        <h3>Tiramisu</h3>
+                        <p>Classic Italian dessert with mascarpone and espresso</p>
+                        <span class="price">$7.99</span>
+                    </div>
+                    <div class="item">
+                        <h3>Panna Cotta</h3>
+                        <p>Silky smooth cream with berry compote</p>
+                        <span class="price">$6.99</span>
+                    </div>
+                    <div class="item">
+                        <h3>Gelato Trio</h3>
+                        <p>Three scoops of authentic Italian gelato</p>
+                        <span class="price">$8.99</span>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages">
+                    <div class="item">
+                        <h3>Chianti Classico</h3>
+                        <p>Red wine from Tuscany</p>
+                        <span class="price">$12/glass</span>
+                    </div>
+                    <div class="item">
+                        <h3>Pinot Grigio</h3>
+                        <p>Crisp white wine from northern Italy</p>
+                        <span class="price">$10/glass</span>
+                    </div>
+                    <div class="item">
+                        <h3>Espresso</h3>
+                        <p>Strong Italian coffee</p>
+                        <span class="price">$2.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Dish+1" alt="Delicious pasta dish">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Restaurant+Interior" alt="Restaurant interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Chef+Preparing" alt="Chef preparing food">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Dining+Experience" alt="Dining experience">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Appetizers" alt="Appetizers">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Desserts" alt="Delicious desserts">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Restaurant Street<br>Italian Quarter, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@bellacucina.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Thu: 5PM - 11PM<br>Fri-Sat: 5PM - 12AM<br>Sun: 5PM - 10PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 La Bella Cucina. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
